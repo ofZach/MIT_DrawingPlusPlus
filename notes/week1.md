@@ -13,7 +13,7 @@
 * Go to [https://openframeworks.cc/](https://openframeworks.cc/)
 * Download openFrameworks for your operating system, current version is 0.11.0.
 * Unzip, and place the folder "of_v0.10.1_osx_release" in your home directory.
-* Clone this repository[https://github.com/ofZach/MIT_DrawingPlusPlus](https://github.com/ofZach/MIT_DrawingPlusPlus).
+* Clone this repository [https://github.com/ofZach/MIT_DrawingPlusPlus](https://github.com/ofZach/MIT_DrawingPlusPlus).
 
 ```bash 
 git clone "https://github.com/ofZach/MIT_DrawingPlusPlus.git"
