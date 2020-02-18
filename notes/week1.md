@@ -8,19 +8,24 @@
 * Install and setup [openFrameworks](https://openframeworks.cc/)
 * Document all the drawings you encounter until next class.
 
-### Setup of openFrameworks
+### Setup of openFrameworks and this repository
 
 * Go to [https://openframeworks.cc/](https://openframeworks.cc/)
 * Download openFrameworks for your operating system, current version is 0.11.0.
 * Unzip, and place the folder "of_v0.10.1_osx_release" in your home directory.
 * Clone this repository[https://github.com/ofZach/MIT_DrawingPlusPlus](https://github.com/ofZach/MIT_DrawingPlusPlus).
 
-```bash
+```bash 
 git clone "https://github.com/ofZach/MIT_DrawingPlusPlus.git"
 ```
 
 * Place this repository inside of the folder apps/ on your openFrameworks.
 
+* To update your local repository to the one on the cloud, use the command
+
+```bash
+git pull
+```
 
 
 ### Programming notes:
