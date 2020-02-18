@@ -76,7 +76,7 @@ ofPolyline resampled = line.getResampledBySpacing(10);
 
 * basicDrawing: black background, white circles are drawn when the mouse is pressed. The circles remain forever.
 
-![alt text](https://github.com/ofZach/https://github.com/ofZach/MIT_DrawingPlusPlus/raw/master/notes/images/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
+![alt text](https://github.com/ofZach/MIT_DrawingPlusPlus/raw/master/notes/images/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
 
 * basicDrawing2: 
 
