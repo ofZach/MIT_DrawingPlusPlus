@@ -13,22 +13,23 @@
 * Go to [https://openframeworks.cc/](https://openframeworks.cc/)
 * Download openFrameworks for your operating system, current version is 0.11.0.
 * Unzip, and place the folder "of_v0.10.1_osx_release" in your home directory.
-* Clone this repository [https://github.com/ofZach/MIT_DrawingPlusPlus](https://github.com/ofZach/MIT_DrawingPlusPlus).
+* Clone this repository [https://github.com/ofZach/MIT_DrawingPlusPlus](https://github.com/ofZach/MIT_DrawingPlusPlus) with the following command.
 
-```bash 
+```zsh 
 git clone "https://github.com/ofZach/MIT_DrawingPlusPlus.git"
 ```
 
 * Place this repository inside of the folder apps/ on your openFrameworks.
 
-* To update your local repository to the one on the cloud, use the command
+* Whenever you want to update your local repository to the one on the cloud, use the command
 
-```bash
+```zsh
 git pull
 ```
 
-If you have any doubts, please let us know and come to office hours.
+* The first time you build the project, it might take longer.
 
+* If you have any doubts, please let us know on class, Slack, or come to office hours.
 
 ### Programming notes:
 
@@ -70,6 +71,20 @@ float time = ofGetElapsedTimef();
 // resample a line
 ofPolyline resampled = line.getResampledBySpacing(10);
 ```
+
+## Code examples
+
+* basicDrawing: black background, white circles are drawn when the mouse is pressed. The circles remain forever.
+
+![alt text](images/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
+
+* basicDrawing2: black background, white continuous line drawn on top, made with ofPolyline.
+
+![alt text](images/basicDrawing2.jpg "basicDrawing2, black background, white continous line on top.")
+
+* basicDrawing3: black background, square shape drawn with a stroke made out of tiny red circles. This stroke is achieved by using a polyLine, resampling this line, and then drawing the resampled line using red circles.
+
+![alt text](images/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
 
 ## Class 2: Wednesday February 19 2020
 
