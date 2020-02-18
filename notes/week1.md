@@ -78,11 +78,13 @@ ofPolyline resampled = line.getResampledBySpacing(10);
 
 ![alt text](images/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
 
-* basicDrawing2: 
+* basicDrawing2: black background, white continuous line drawn on top, made with ofPolyline.
 
+![alt text](images/basicDrawing2.jpg "basicDrawing2, black background, white continous line on top.")
 
+* basicDrawing3: black background, square shape drawn with a stroke made out of tiny red circles. This stroke is achieved by using a polyLine, then resampling it, and then rendering the resulting trail with the red circles.
 
-* basicDrawing3: 
+![alt text](images/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
 
 ## Class 2: Wednesday February 19 2020
 
