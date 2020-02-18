@@ -27,6 +27,8 @@ git clone "https://github.com/ofZach/MIT_DrawingPlusPlus.git"
 git pull
 ```
 
+If you have any doubts, please let us know and come to office hours.
+
 
 ### Programming notes:
 
