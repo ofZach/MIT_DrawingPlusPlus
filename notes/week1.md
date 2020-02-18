@@ -2,13 +2,17 @@
 
 ## Class 1: Tuesday February 18 2020
 
-Assignment for next class:
+### Assignment for next class:
 
-* Readings 
-* Install and setup openFrameworks
+* Readings on shared Dropbox folder
+* Install and setup [https://openframeworks.cc/](open)
 * Document all the drawings you encounter until next class.
 
-Programming notes:
+### Setup of openFrameworks
+
+
+
+### Programming notes:
 
 ```cpp
 // set background
@@ -38,7 +42,6 @@ for (int i = 0; i < line.size(); i++) {
   line[i].y += ofRandom(-1, 1);
 }
 ```
-
 
 ```cpp
 // retrieve time
