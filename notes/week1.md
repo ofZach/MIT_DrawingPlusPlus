@@ -76,15 +76,15 @@ ofPolyline resampled = line.getResampledBySpacing(10);
 
 * basicDrawing: black background, white circles are drawn when the mouse is pressed. The circles remain forever.
 
-![alt text](images/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
+![alt text](assets/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
 
 * basicDrawing2: black background, white continuous line drawn on top, made with ofPolyline.
 
-![alt text](images/basicDrawing2.jpg "basicDrawing2, black background, white continous line on top.")
+![alt text](assets/basicDrawing2.jpg "basicDrawing2, black background, white continous line on top.")
 
 * basicDrawing3: black background, square shape drawn with a stroke made out of tiny red circles. This stroke is achieved by using a polyLine, resampling this line, and then drawing the resampled line using red circles.
 
-![alt text](images/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
+![alt text](assets/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
 
 ## Class 2: Wednesday February 19 2020
 
@@ -123,6 +123,12 @@ A line in 2D can be defined in different ways:
 * The segment that goes from point (x1, y1) a distance r in angle theta (r, theta)
 
 ### Programming notes
+
+### Code examples
+
+* drawingPlayback: an animation with black background, a white line on top, and a white dot plays back the stroke motion.
+
+![alt text](assets/drawingPlayback.gif "drawingPlayback, an animation with black background, a white line on top, and a white dot plays back the stroke motion.")
 
 ### Assignment
 
