@@ -72,7 +72,7 @@ float time = ofGetElapsedTimef();
 ofPolyline resampled = line.getResampledBySpacing(10);
 ```
 
-## Code examples
+### Code examples
 
 * basicDrawing: black background, white circles are drawn when the mouse is pressed. The circles remain forever.
 
@@ -87,6 +87,18 @@ ofPolyline resampled = line.getResampledBySpacing(10);
 ![alt text](images/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
 
 ## Class 2: Wednesday February 19 2020
+
+### Taxonomy of drawings
+
+* Intentional / unintentional
+* Finished / in-progress / censored
+* Permanent / intermitent
+* Animal / nature
+* One-glance / several glances
+* Flat / several dimensions
+* Utilitarian / non utilitarian
+
+What is the boundary of drawing?
 
 ## Class 3: Thursday February 20 2020
 
