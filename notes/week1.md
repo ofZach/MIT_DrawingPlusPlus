@@ -98,7 +98,35 @@ ofPolyline resampled = line.getResampledBySpacing(10);
 * Flat / several dimensions
 * Utilitarian / non utilitarian
 
-What is the boundary of drawing?
+### Drawing exercise
+
+* Each person takes a piece of paper, puts their name and the number 1 on it, and then writes a set of instructions for doing a drawing.
+* Everyone swaps their paper with instructions.
+* Each person takes a new piece of paper, and labels it with the same name on the piece of paper they got, and one number up.
+* Follow the instructions and draw on your paper.
+* Keep your paper with drawings and put the one you received on the shared pile.
+* Everyone swaps their paper with drawings.
+* Each person takes a new piece of paper, and labels it with the same name on the piece of paper they got, and one number up.
+* Look at the drawing and come up with the rules that were followed when your drawing was done.
+* Keep your paper with instructions and put the one you received on the shared pile.
+* Keep on swapping and going from drawing to instructions back and forth.
+* At the end, gather the pile of papers and reconstruct the sequences for each person.
+
+### Geometry notes
+
+A point in 2D can be defined in different ways:
+* A pair of (x,y) coordinates measured from an origin (0,0), where x is horizontal position, y is vertical position.
+* As a collection of (r,theta) coordinates measured from an origin (0,0), where r is distance, and theta is angle (measured in degrees, radians).
+
+A line in 2D can be defined in different ways:
+* The segment that goes from point (x1, y1) to point (x2, y2).
+* The segment that goes from point (x1, y1) a distance r in angle theta (r, theta)
+
+### Programming notes
+
+### Assignment
+
+Build a computational drawing tool -- either one that takes gesture as input or that's based on rules (translating rules into drawing commands.)
 
 ## Class 3: Thursday February 20 2020
 
