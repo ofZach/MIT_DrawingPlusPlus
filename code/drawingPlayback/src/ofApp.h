@@ -20,9 +20,9 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-    
+        
+        // declare instances of ofPolyline and ofSoundPlayer
+        // they are global and can be used in any frame
         ofPolyline line;
-    ofSoundPlayer player;
-    
-		
+        ofSoundPlayer player;
 };
