@@ -8,7 +8,7 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
 
-    //for (int z = 0; z < 100; z++){
+    for (int z = 0; z < 100; z++){
     
         if (myLines.size() == 0){
         
@@ -28,10 +28,10 @@ void ofApp::update(){
             //
             int whichLine = ofRandom(0, myLines.size());
             //float randomPct = 0.9; //ofRandom(0,1);
-            float randomPct = ofRandom(0,1);
+            float randomPct = 0.5; //ofRandom(0,1);
             ofPoint start = myLines[whichLine].a * (1-randomPct) +
                             myLines[whichLine].b * randomPct;
-            float distance = ofRandom(10,300); //ofRandom(100);
+            float distance = 100; //ofRandom(10,300); //ofRandom(100);
             //float angle = (int)ofRandom(0,8) * TWO_PI/8;
             float angle = ofRandom(0, TWO_PI);
             line tempLine;
@@ -51,7 +51,7 @@ void ofApp::update(){
         }
         
         
-    //}
+    }
 }
 
 //--------------------------------------------------------------
@@ -68,7 +68,9 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
 
-    myLines.clear();
+    if (key == ' '){
+        myLines.clear();
+    }
 }
 
 //--------------------------------------------------------------

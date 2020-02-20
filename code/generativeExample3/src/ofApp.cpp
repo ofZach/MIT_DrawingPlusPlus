@@ -8,7 +8,7 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
 
-    //for (int z = 0; z < 100; z++){
+    for (int z = 0; z < 100; z++){
     
         if (myLines.size() == 0){
         
@@ -33,7 +33,8 @@ void ofApp::update(){
                             myLines[whichLine].b * randomPct;
             float distance = ofRandom(10,300); //ofRandom(100);
             //float angle = (int)ofRandom(0,8) * TWO_PI/8;
-            float angle = ofRandom(0, TWO_PI);
+            float angle = (int) ofRandom(0, 8) * TWO_PI/8.0;
+            //ofRandom(0, TWO_PI);
             line tempLine;
             tempLine.a = start;
             tempLine.b = start + distance * ofPoint(cos(angle),
@@ -51,7 +52,7 @@ void ofApp::update(){
         }
         
         
-    //}
+    }
 }
 
 //--------------------------------------------------------------
@@ -68,7 +69,9 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
 
-    myLines.clear();
+    if (key == ' '){
+        myLines.clear();
+    }
 }
 
 //--------------------------------------------------------------
