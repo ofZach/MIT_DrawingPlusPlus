@@ -10,10 +10,15 @@ void ofApp::update(){
 
     float time = ofGetElapsedTimef();
     
+    // go through every element in the ofPolyline
     for (int i = 0; i < line.size(); i++){
-        //line[i].x += ofRandom(-1,1);
-        //line[i].y += ofRandom(-1,1);
-        //line[i].x += sin(time + line[i].y * 0.01) * 3;
+
+        // uncomment to add random noise to each element
+        // line[i].x += ofRandom(-1,1);
+        // line[i].y += ofRandom(-1,1);
+
+        // uncomment to add a sine wave to x position
+        // line[i].x += sin(time + line[i].y * 0.01) * 3;
     }
     
 }
@@ -21,7 +26,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-   
+    // draw the ofPolyline line
     line.draw();
 }
 
@@ -42,6 +47,7 @@ void ofApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
+    // when mouse is dragged, add a new vertex to ofPolyline line
     line.addVertex(x,y);
 }
 
