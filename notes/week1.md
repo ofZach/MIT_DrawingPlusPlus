@@ -1,4 +1,10 @@
-# Notes from class MAS.S62 DrawingPlusPlus, by Zach Lieberman
+# MAS.S62 DrawingPlusPlus class notes
+
+## About
+
+* MAS.S62 is a class by Zach Lieberman
+* Taught at MIT Media Lab, spring semester 2020
+* Teaching assistant: Aarón Montoya-Moraga
 
 ## Class 1: Tuesday February 18 2020
 
@@ -72,21 +78,83 @@ float time = ofGetElapsedTimef();
 ofPolyline resampled = line.getResampledBySpacing(10);
 ```
 
-## Code examples
+### Code examples
 
 * basicDrawing: black background, white circles are drawn when the mouse is pressed. The circles remain forever.
 
-![alt text](images/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
+![alt text](assets/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
 
 * basicDrawing2: black background, white continuous line drawn on top, made with ofPolyline.
 
-![alt text](images/basicDrawing2.jpg "basicDrawing2, black background, white continous line on top.")
+![alt text](assets/basicDrawing2.jpg "basicDrawing2, black background, white continous line on top.")
 
 * basicDrawing3: black background, square shape drawn with a stroke made out of tiny red circles. This stroke is achieved by using a polyLine, resampling this line, and then drawing the resampled line using red circles.
 
-![alt text](images/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
+![alt text](assets/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
 
 ## Class 2: Wednesday February 19 2020
+
+### Taxonomy of drawings
+
+* Intentional / unintentional
+* Finished / in-progress / censored
+* Permanent / intermitent
+* Animal / nature
+* One-glance / several glances
+* Flat / several dimensions
+* Utilitarian / non utilitarian
+
+### Drawing exercise
+
+* Each person takes a piece of paper, puts their name and the number 1 on it, and then writes a set of instructions for doing a drawing.
+* Everyone swaps their paper with instructions.
+* Each person takes a new piece of paper, and labels it with the same name on the piece of paper they got, and one number up.
+* Follow the instructions and draw on your paper.
+* Keep your paper with drawings and put the one you received on the shared pile.
+* Everyone swaps their paper with drawings.
+* Each person takes a new piece of paper, and labels it with the same name on the piece of paper they got, and one number up.
+* Look at the drawing and come up with the rules that were followed when your drawing was done.
+* Keep your paper with instructions and put the one you received on the shared pile.
+* Keep on swapping and going from drawing to instructions back and forth.
+* At the end, gather the pile of papers and reconstruct the sequences for each person.
+
+### Geometry notes
+
+A point in 2D can be defined in different ways:
+* A pair of (x,y) coordinates measured from an origin (0,0), where x is horizontal position, y is vertical position.
+* As a collection of (r,theta) coordinates measured from an origin (0,0), where r is distance, and theta is angle (measured in degrees, radians).
+
+A line in 2D can be defined in different ways:
+* The segment that goes from point (x1, y1) to point (x2, y2).
+* The segment that goes from point (x1, y1) a distance r in angle theta (r, theta)
+
+### Programming notes
+
+### Code examples
+
+* drawingPlayback: black background, a white line on top, and a white dot plays back the stroke motion.
+
+![alt text](assets/drawingPlayback.gif "An animation of drawingPlayback, black background, a white line on top, and a white dot plays back the stroke motion.")
+
+* drawing3d: the cursor is drawing on the screen plane, and this plane is rotating while the drawing is happening, resulting in a three dimensional drawing.
+
+![alt text](assets/drawing3d.gif "An animation of drawing3d, the cursor is drawing on the screen plane, and this plane is rotating while the drawing is happening, resulting in a three dimensional drawing.")
+
+* drawingBackwards: the drawing is made on the opposite direction of the movement of the mouse cursor, and the drawing follows the mouse around.
+
+![alt text](assets/drawingBackwards.gif "An animation of drawingBackwards, the drawing is made on the opposite direction of the movement of the mouse cursor, and the drawing follows the mouse around.")
+
+* drawingRendering: 
+
+![alt text](assets/drawingRendering.gif "An animation of drawingRendering, ")
+
+* generativeExample1: 
+
+![alt text](assets/generativeExample1.gif "An animation of generativeExample1, ")
+
+### Assignment
+
+Build a computational drawing tool -- either one that takes gesture as input or that's based on rules (translating rules into drawing commands.)
 
 ## Class 3: Thursday February 20 2020
 

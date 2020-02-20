@@ -21,7 +21,8 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
-    bool bMousePressed;
-    ofPolyline line;
-    
+        // declare global variables
+        // they can be used in any frame
+        bool bMousePressed;
+        ofPolyline line;
 };
