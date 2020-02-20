@@ -28,11 +28,8 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
-        
-        //line myLine;
-        //line myLines[100];
-        vector < line > myLines;
     
-        
+        // create array myLines of objects type line
+        // syntax is vector < type > name;
+        vector < line > myLines;
 };
