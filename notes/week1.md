@@ -1,4 +1,10 @@
-# Notes from class MAS.S62 DrawingPlusPlus, by Zach Lieberman
+# MAS.S62 DrawingPlusPlus class notes
+
+## About
+
+* MAS.S62 is a class by Zach Lieberman
+* Taught at MIT Media Lab, spring semester 2020
+* Teaching assistant: Aarón Montoya-Moraga
 
 ## Class 1: Tuesday February 18 2020
 
@@ -126,9 +132,25 @@ A line in 2D can be defined in different ways:
 
 ### Code examples
 
-* drawingPlayback: an animation with black background, a white line on top, and a white dot plays back the stroke motion.
+* drawingPlayback: black background, a white line on top, and a white dot plays back the stroke motion.
 
-![alt text](assets/drawingPlayback.gif "drawingPlayback, an animation with black background, a white line on top, and a white dot plays back the stroke motion.")
+![alt text](assets/drawingPlayback.gif "An animation of drawingPlayback, black background, a white line on top, and a white dot plays back the stroke motion.")
+
+* drawing3d: the cursor is drawing on the screen plane, and this plane is rotating while the drawing is happening, resulting in a three dimensional drawing.
+
+![alt text](assets/drawing3d.gif "An animation of drawing3d, the cursor is drawing on the screen plane, and this plane is rotating while the drawing is happening, resulting in a three dimensional drawing.")
+
+* drawingBackwards: the drawing is made on the opposite direction of the movement of the mouse cursor, and the drawing follows the mouse around.
+
+![alt text](assets/drawingBackwards.gif "An animation of drawingBackwards, the drawing is made on the opposite direction of the movement of the mouse cursor, and the drawing follows the mouse around.")
+
+* drawingRendering: 
+
+![alt text](assets/drawingRendering.gif "An animation of drawingRendering, ")
+
+* generativeExample1: 
+
+![alt text](assets/generativeExample1.gif "An animation of generativeExample1, ")
 
 ### Assignment
 
