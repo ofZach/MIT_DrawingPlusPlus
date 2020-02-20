@@ -20,9 +20,9 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-    
-    ofPolyline line;
-    ofPoint prevMouse;
-    
-		
+        
+        // create instance of ofPolyline and ofPoint
+        // they can be accessed from any frame
+        ofPolyline line;
+        ofPoint prevMouse;
 };
