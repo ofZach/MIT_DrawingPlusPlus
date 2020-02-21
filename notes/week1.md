@@ -158,4 +158,34 @@ Build a computational drawing tool -- either one that takes gesture as input or 
 
 ## Class 3: Thursday February 20 2020
 
+### Drawing exercise
+
+We divided in groups and used drawing as a way of understanding computation. The groups tackled these topics:
+
+*  QR code
+* Logic gates
+* Line drawing
+
+### Code examples
+
+* generativeExample2: 
+
+![alt text](assets/generativeExample2.gif "An animation of generativeExample2, ")
+
+* generativeExample3: 
+
+![alt text](assets/generativeExample3.gif "An animation of generativeExample3, ")
+
+* generativeExample4: 
+
+![alt text](assets/generativeExample2.gif "An animation of generativeExample4, ")
+
+* generativeExample5: 
+
+![alt text](assets/generativeExample2.gif "An animation of generativeExample5, ")
+
+### Assignment
+
+Make the largest possible drawing and the smallest possible drawing you can.
+
 ## Class 4: Friday February 20 2020
