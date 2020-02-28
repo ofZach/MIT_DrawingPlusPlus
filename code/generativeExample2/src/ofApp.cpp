@@ -80,22 +80,29 @@ void ofApp::update(){
             
             // declare a new ofPoint called inter
             ofPoint inter;
-            // go through every ofLine in the vector myLines
+            
+            // go through every line in the vector myLines
             for (int i = 0; i < myLines.size(); i++){
-                // if the tempLine intersects with the current ofLine of the vector myLines
-                if ( ofLineSegmentIntersection(tempLine.a, tempLine.b, myLines[i].a, myLines[i].b, inter)){
+                
+                // if the tempLine intersects with the current line of the vector myLines
+                if ( ofLineSegmentIntersection(tempLine.a, tempLine.b,
+                                               myLines[i].a, myLines[i].b,
+                                               inter)){
                     // make addTempline false
-                    addTempline = false;  // :(
+                    addTempline = false;
+                    
                     // end the iteration
                     break;
                 }
+                
             }
             
             // if the addTempline boolean is true
-            // add the tempLine to the last position of the myLines vector
             if (addTempline) {
+                // add the tempLine to the last position of the myLines vector
                 myLines.push_back(tempLine);
             }
+            
         }
     }
 }

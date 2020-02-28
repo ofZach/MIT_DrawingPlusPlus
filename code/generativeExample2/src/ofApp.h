@@ -32,6 +32,4 @@ class ofApp : public ofBaseApp{
         // mylines is the name of a vector of type line
         // syntax: vector <type> name;
         vector < line > myLines;
-    
-        
 };
