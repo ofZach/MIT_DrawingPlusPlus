@@ -28,10 +28,9 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
         
-        //line myLine;
-        //line myLines[100];
+        // mylines is the name of the instance of vector vector of lines,
+        // syntax is vector <type> name;
         vector < line > myLines;
     
         
