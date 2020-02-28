@@ -2,13 +2,13 @@
 
 #include "ofMain.h"
 
-
+// declaration of class line
+// line has two elements: ofPoint a, and ofPoint b
 class line {
     public:
         ofPoint a;
         ofPoint b;
 };
-
 
 class ofApp : public ofBaseApp{
 
@@ -29,9 +29,7 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
         
-        // mylines is the name of the instance of vector vector of lines,
-        // syntax is vector <type> name;
+        // mylines is the name of a vector of type line
+        // syntax: vector <type> name;
         vector < line > myLines;
-    
-        
 };
