@@ -189,3 +189,9 @@ We divided in groups and used drawing as a way of understanding computation. The
 Make the largest possible drawing and the smallest possible drawing you can.
 
 ## Class 4: Friday February 20 2020
+
+### Code examples
+
+* Node:
+
+### Assignment
