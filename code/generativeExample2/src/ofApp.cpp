@@ -7,11 +7,13 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
-    for (int z = 0; z < 100; z++){
     
-        if (myLines.size() == 0){
+    //
+    for (int z = 0; z < 100; z++){
         
+        // check if there are lines in the myLines vector
+        if (myLines.size() == 0){
+            
             line tempLine;
             ofPoint start = ofPoint(ofGetWidth()/2,
                                     ofGetHeight()/2);
@@ -23,6 +25,7 @@ void ofApp::update(){
                                                     sin(angle));
             
             myLines.push_back(tempLine);
+        
         } else {
             
             //
@@ -56,18 +59,23 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    
+    // paint the background, color black
     ofBackground(0);
+    
+    // set the line width to 2 px
     ofSetLineWidth(2);
+    
+    // go through every line in myLines
     for (int i = 0; i < myLines.size(); i++){
-        ofDrawLine(myLines[i].a,
-                   myLines[i].b);
+        // draw each line
+        ofDrawLine(myLines[i].a, myLines[i].b);
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    // when spacebar is pressed, clear the myLines vector
     if (key == ' '){
         myLines.clear();
     }
