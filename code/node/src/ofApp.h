@@ -20,21 +20,23 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    
+        // declare function for updating random
+        void updateSpeeds(bool updateA, bool updateB);
 		
+        // declare global variables
+        
         float speedA;
         float speedB;
         
         float speedASmooth;
         float speedBSmooth;
         
-    
-    
         ofNode nodeA;
         ofNode nodeB;
         ofNode nodeC;
-    
+        
         ofPolyline myLine;
     
-       
-        
+    
 };
