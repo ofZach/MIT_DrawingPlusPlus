@@ -144,9 +144,9 @@ A line in 2D can be defined in different ways:
 
 ![alt text](assets/drawingBackwards.gif "An animation of drawingBackwards, the drawing is made on the opposite direction of the movement of the mouse cursor, and the drawing follows the mouse around.")
 
-* drawingRendering: the drawing is made using the cursor, for every click the screen is cleared, and dragging stores the trajectory of the mouse in a mesh, which is rendered using grayscale for each new vertex and the color fluctuatives sinusoidally over time. 
+* drawingRendering: the drawing is made using the cursor, for every click the screen is cleared, and dragging stores the trajectory of the mouse in a mesh, which is rendered using grayscale for each new vertex and the color changes sinusoidally over time. 
 
-![alt text](assets/drawingRendering.gif "An animation of drawingRendering, the drawing is made using the cursor, for every click the screen is cleared, and dragging stores the trajectory of the mouse in a mesh, which is rendered using grayscale for each new vertex and the color fluctuatives sinusoidally over time.")
+![alt text](assets/drawingRendering.gif "An animation of drawingRendering, the drawing is made using the cursor, for every click the screen is cleared, and dragging stores the trajectory of the mouse in a mesh, which is rendered using grayscale for each new vertex and the color changes sinusoidally over time.")
 
 * generativeExample1: 
 
