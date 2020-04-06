@@ -82,15 +82,15 @@ ofPolyline resampled = line.getResampledBySpacing(10);
 
 * basicDrawing: black background, white circles are drawn when the mouse is pressed. The circles remain forever.
 
-![alt text](assets/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
+![basicDrawing.jpg](assets/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
 
 * basicDrawing2: black background, white continuous line drawn on top, made with ofPolyline.
 
-![alt text](assets/basicDrawing2.jpg "basicDrawing2, black background, white continous line on top.")
+![basicDrawing2.jpg](assets/basicDrawing2.jpg "basicDrawing2, black background, white continous line on top.")
 
 * basicDrawing3: black background, square shape drawn with a stroke made out of tiny red circles. This stroke is achieved by using a polyLine, resampling this line, and then drawing the resampled line using red circles.
 
-![alt text](assets/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
+![basicDrawing3.jpg](assets/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
 
 ## Class 2: Wednesday February 19 2020
 
@@ -134,11 +134,11 @@ A line in 2D can be defined in different ways:
 
 * drawingPlayback: black background, a white line on top, and a white dot plays back the stroke motion.
 
-![alt text](assets/drawingPlayback.gif "An animation of drawingPlayback.")
+![drawingPlayback.gif](assets/drawingPlayback.gif "An animation of drawingPlayback.")
 
 * drawing3d: the cursor is drawing on the screen plane, and this plane is rotating while the drawing is happening, resulting in a three dimensional drawing.
 
-![alt text](assets/drawing3d.gif "An animation of drawing3d.")
+![drawing3d.gif](assets/drawing3d.gif "An animation of drawing3d.")
 
 * drawingBackwards: the drawing is made on the opposite direction of the movement of the mouse cursor, and the drawing follows the mouse around.
 
@@ -146,11 +146,11 @@ A line in 2D can be defined in different ways:
 
 * drawingRendering: the drawing is made using the cursor, for every click the screen is cleared, and dragging stores the trajectory of the mouse in a mesh, which is rendered using grayscale for each new vertex and the color changes sinusoidally over time. 
 
-![alt text](assets/drawingRendering.gif "An animation of drawingRendering.")
+![drawingRendering.gif](assets/drawingRendering.gif "An animation of drawingRendering.")
 
 * generativeExample1: the drawing is white lines over gray background, where in every iteration, a random starting point on an existing line is picked, and then a new line is drawn from it, with a random angle and random length, only if this new line does not intersect with existing lines.
 
-![alt text](assets/generativeExample1.gif "An animation of generativeExample1.")
+![generativeExample1.gif](assets/generativeExample1.gif "An animation of generativeExample1.")
 
 ### Assignment
 
@@ -184,8 +184,6 @@ We divided in groups and used drawing as a way of understanding computation. The
 
 ![generativeExample5.gif](assets/generativeExample5.gif "An animation of generativeExample5")
 
-![generativeExample6.gif](assets/generativeExample6.gif "An animation of generativeExample6")
-
 ### Assignment
 
 Make the largest possible drawing and the smallest possible drawing you can.
@@ -196,10 +194,10 @@ Make the largest possible drawing and the smallest possible drawing you can.
 
 * generativeExample6: 
 
-![alt text](assets/generativeExample2.gif "An animation of generativeExample5, ")
+![generativeExample6.gif](assets/generativeExample6.gif "An animation of generativeExample6")
 
 * node:
 
-![alt text](assets/generativeExample2.gif "An animation of generativeExample5, ")
+![node.gif](assets/node.gif "An animation of node")
 
 ### Assignment
