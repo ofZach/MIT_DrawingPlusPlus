@@ -134,23 +134,23 @@ A line in 2D can be defined in different ways:
 
 * drawingPlayback: black background, a white line on top, and a white dot plays back the stroke motion.
 
-![alt text](assets/drawingPlayback.gif "An animation of drawingPlayback, black background, a white line on top, and a white dot plays back the stroke motion.")
+![alt text](assets/drawingPlayback.gif "An animation of drawingPlayback.")
 
 * drawing3d: the cursor is drawing on the screen plane, and this plane is rotating while the drawing is happening, resulting in a three dimensional drawing.
 
-![alt text](assets/drawing3d.gif "An animation of drawing3d, the cursor is drawing on the screen plane, and this plane is rotating while the drawing is happening, resulting in a three dimensional drawing.")
+![alt text](assets/drawing3d.gif "An animation of drawing3d.")
 
 * drawingBackwards: the drawing is made on the opposite direction of the movement of the mouse cursor, and the drawing follows the mouse around.
 
-![alt text](assets/drawingBackwards.gif "An animation of drawingBackwards, the drawing is made on the opposite direction of the movement of the mouse cursor, and the drawing follows the mouse around.")
+![alt text](assets/drawingBackwards.gif "An animation of drawingBackwards.")
 
 * drawingRendering: the drawing is made using the cursor, for every click the screen is cleared, and dragging stores the trajectory of the mouse in a mesh, which is rendered using grayscale for each new vertex and the color changes sinusoidally over time. 
 
-![alt text](assets/drawingRendering.gif "An animation of drawingRendering, the drawing is made using the cursor, for every click the screen is cleared, and dragging stores the trajectory of the mouse in a mesh, which is rendered using grayscale for each new vertex and the color changes sinusoidally over time.")
+![alt text](assets/drawingRendering.gif "An animation of drawingRendering.")
 
-* generativeExample1: 
+* generativeExample1: the drawing is white lines over gray background, where in every iteration, a random starting point on an existing line is picked, and then a new line is drawn from it, with a random angle and random length, only if this new line does not intersect with existing lines.
 
-![alt text](assets/generativeExample1.gif "An animation of generativeExample1, ")
+![alt text](assets/generativeExample1.gif "An animation of generativeExample1.")
 
 ### Assignment
 
@@ -162,7 +162,7 @@ Build a computational drawing tool -- either one that takes gesture as input or 
 
 We divided in groups and used drawing as a way of understanding computation. The groups tackled these topics:
 
-*  QR code
+* QR code
 * Logic gates
 * Line drawing
 
