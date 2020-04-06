@@ -170,7 +170,7 @@ We divided in groups and used drawing as a way of understanding computation. The
 
 * generativeExample2: the drawing is white lines over black background, where in every iteration a new line is drawn starting from a point in an existing line, using a random angle and a fixed distance, only if this new line does not intersect with existing lines.
 
-![alt text](assets/generativeExample2.gif "An animation of generativeExample2")
+![alt test](assets/generativeExample2.gif "An animation of generativeExample2")
 
 * generativeExample3: 
 
