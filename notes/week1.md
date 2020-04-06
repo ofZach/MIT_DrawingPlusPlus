@@ -172,7 +172,7 @@ We divided in groups and used drawing as a way of understanding computation. The
 
 ![generativeExample2.gif](assets/generativeExample2.gif "An animation of generativeExample2")
 
-* generativeExample3: 
+* generativeExample3: the drawing is white lines over black background, where in every iteration a new line is drawn starting from a point in an existing line, choosing a random angle multiple of 45 degrees (0, 45, 90, 135, 180, 225, 270, 315) and a random distance, only if this new line does not intersect with existing lines.
 
 ![generativeExample3.gif](assets/generativeExample3.gif "An animation of generativeExample3")
 
