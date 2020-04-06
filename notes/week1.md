@@ -170,19 +170,21 @@ We divided in groups and used drawing as a way of understanding computation. The
 
 * generativeExample2: the drawing is white lines over black background, where in every iteration a new line is drawn starting from a point in an existing line, using a random angle and a fixed distance, only if this new line does not intersect with existing lines.
 
-![alt text](assets/generativeExample2.gif "An animation of generativeExample2")
+![generativeExample2.gif](assets/generativeExample2.gif "An animation of generativeExample2")
 
 * generativeExample3: 
 
-![alt test](assets/generativeExample3.gif "An animation of generativeExample3, ")
+![generativeExample3.gif](assets/generativeExample3.gif "An animation of generativeExample3")
 
 * generativeExample4: 
 
-![alt text](assets/generativeExample2.gif "An animation of generativeExample4, ")
+![generativeExample4.gif](assets/generativeExample4.gif "An animation of generativeExample4")
 
 * generativeExample5: 
 
-![alt text](assets/generativeExample2.gif "An animation of generativeExample5, ")
+![generativeExample5.gif](assets/generativeExample5.gif "An animation of generativeExample5")
+
+![generativeExample6.gif](assets/generativeExample6.gif "An animation of generativeExample6")
 
 ### Assignment
 
