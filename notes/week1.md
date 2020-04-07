@@ -180,7 +180,7 @@ We divided in groups and used drawing as a way of understanding computation. The
 
 ![generativeExample4.gif](assets/generativeExample4.gif "An animation of generativeExample4")
 
-* generativeExample5: 
+* generativeExample5: the drawing is white lines over black background, where in every iteration a new line is drawn starting from a random point in an existing line, choosing a random angle which is almost perpendicular (+90 or -90 degress plus a bit of noise). The new line is drawn only until it intersects with an existing line and only if this new line is larger than a threshold.
 
 ![generativeExample5.gif](assets/generativeExample5.gif "An animation of generativeExample5")
 
