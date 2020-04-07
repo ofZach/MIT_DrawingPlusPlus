@@ -6,7 +6,7 @@
 * Taught at MIT Media Lab, spring semester 2020
 * Teaching assistant: Aarón Montoya-Moraga
 
-## Class 1: Tuesday February 18 2020
+## Class 01: Tuesday February 18 2020
 
 ### Assignment for next class:
 
@@ -92,7 +92,7 @@ ofPolyline resampled = line.getResampledBySpacing(10);
 
 ![basicDrawing3.jpg](assets/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
 
-## Class 2: Wednesday February 19 2020
+## Class 02: Wednesday February 19 2020
 
 ### Taxonomy of drawings
 
@@ -156,7 +156,7 @@ A line in 2D can be defined in different ways:
 
 Build a computational drawing tool -- either one that takes gesture as input or that's based on rules (translating rules into drawing commands.)
 
-## Class 3: Thursday February 20 2020
+## Class 03: Thursday February 20 2020
 
 ### Drawing exercise
 
@@ -188,7 +188,7 @@ We divided in groups and used drawing as a way of understanding computation. The
 
 Make the largest possible drawing and the smallest possible drawing you can.
 
-## Class 4: Friday February 20 2020
+## Class 04: Friday February 20 2020
 
 ### Code examples
 
@@ -199,3 +199,17 @@ Make the largest possible drawing and the smallest possible drawing you can.
 * node: the drawing is a white line over gray background. There is a node on the middle of the canvas, which is connected to a moving node in a fixed distance, and this one is also connected to another one at a fixed distance. This last node is the one that draws a line as a result of leaving a trace of its trajectory while the canvas moves to the left.
 
 ![node.gif](assets/node.gif "An animation of node")
+
+## Class 05: Tuesday March 31 2020 (remote)
+
+## Class 06: Tuesday April 07 2020 (remote)
+
+## Class 07: Tuesday April 14 2020 (remote)
+
+## Class 08: Tuesday April 21 2020 (remote)
+
+## Class 09: Tuesday April 28 2020 (remote)
+
+## Class 10: Tuesday May 05 2020 (remote)
+
+## Class 11: Tuesday May 12 2020 (remote)
