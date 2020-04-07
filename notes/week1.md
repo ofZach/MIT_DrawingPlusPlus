@@ -176,7 +176,7 @@ We divided in groups and used drawing as a way of understanding computation. The
 
 ![generativeExample3.gif](assets/generativeExample3.gif "An animation of generativeExample3")
 
-* generativeExample4: the drawing is white lines over black background, where in every iteration a new line is drawing starting from a random point in an existing line, choosing a random angle and a random distance. The new line is drawn only until it intersects with an existing line and only if this new line is larger than a threshold.
+* generativeExample4: the drawing is white lines over black background, where in every iteration a new line is drawn starting from a random point in an existing line, choosing a random angle and a random distance. The new line is drawn only until it intersects with an existing line and only if this new line is larger than a threshold.
 
 ![generativeExample4.gif](assets/generativeExample4.gif "An animation of generativeExample4")
 
