@@ -196,8 +196,6 @@ Make the largest possible drawing and the smallest possible drawing you can.
 
 ![generativeExample6.gif](assets/generativeExample6.gif "An animation of generativeExample6")
 
-* node: 
+* node: the drawing is a white line over gray background. There is a node on the middle of the canvas, which is connected to a moving node in a fixed distance, and this one is also connected to another one at a fixed distance. This last node is the one that draws a line as a result of leaving a trace of its trajectory while the canvas moves to the left.
 
 ![node.gif](assets/node.gif "An animation of node")
-
-### Assignment
