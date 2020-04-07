@@ -223,6 +223,17 @@ The convention for openFrameworks addons is that their names start with the pref
 
 ![cvFaceDraw.gif](assets/cvFaceDraw.gif "An animation of cvFaceDraw")
 
+### Related artists and artworks
+
+* [Maya Man](https://mayaontheinter.net/): creates work with dancing, machine learning, internet.
+  * [Body, Movement, Language: A.I. Sketches with Bill T. Jones](https://mayaontheinter.net/billtjones/)
+  * [Paint me in pixels so I can dance forever](https://mayaontheinter.net/paintme/)
+* [Andreas Refsgaard](https://andreasrefsgaard.dk/) creates work with computer vision, machine learning and interactivity
+  * [Doodle Tunes](https://andreasrefsgaard.dk/project/doodle-tunes/)
+  * [An algorithm watching a movie trailer](https://andreasrefsgaard.dk/project/an-algorithm-watching-a-movie-trailer/)
+
+
+
 ## Class 06: Tuesday April 07 2020 (remote)
 
 ## Class 07: Tuesday April 14 2020 (remote)
