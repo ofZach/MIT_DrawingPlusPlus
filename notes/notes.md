@@ -202,6 +202,13 @@ Make the largest possible drawing and the smallest possible drawing you can.
 
 ## Class 05: Tuesday March 31 2020 (remote)
 
+In this class we used two openFrameworks addons:
+
+* [ofxCv](https://github.com/kylemcdonald/ofxCv): alternative approach to interfacing with OpenCv from openFrameworks.
+* [ofxFaceTracker2](https://github.com/HalfdanJ/ofxFaceTracker2): face detection and face landmark detection algorithm from [dlib](http://dlib.net/).
+
+The convention for openFrameworks addons is that their names start with the prefix ofx, so by searching "ofx" on GitHub you will be able to find plenty. Also, there is an index compiled from GitHub and separated by categories at [https://ofxaddons.com/](https://ofxaddons.com/).
+
 ### Code examples
 
 * cvColorTracker: 
