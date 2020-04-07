@@ -211,15 +211,15 @@ The convention for openFrameworks addons is that their names start with the pref
 
 ### Code examples
 
-* cvColorTracker: 
+* cvColorTracker: this example looks for a color and then looks up the biggest blob with that color and draws the contour of it.
 
 ![cvColorTracker.gif](assets/cvColorTracker.gif "An animation of cvColorTracker")
 
-* cvColorTracker: 
+* cvContourTracker: 
 
 ![cvContourTracker.gif](assets/cvContourTracker.gif "An animation of cvContourTracker")
 
-* cvColorTracker: 
+* cvFaceDraw: 
 
 ![cvFaceDraw.gif](assets/cvFaceDraw.gif "An animation of cvFaceDraw")
 
