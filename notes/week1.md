@@ -82,15 +82,15 @@ ofPolyline resampled = line.getResampledBySpacing(10);
 
 * basicDrawing: black background, white circles are drawn when the mouse is pressed. The circles remain forever.
 
-![alt text](assets/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
+![basicDrawing.jpg](assets/basicDrawing.jpg "basicDrawing, black background and white circles on top.")
 
 * basicDrawing2: black background, white continuous line drawn on top, made with ofPolyline.
 
-![alt text](assets/basicDrawing2.jpg "basicDrawing2, black background, white continous line on top.")
+![basicDrawing2.jpg](assets/basicDrawing2.jpg "basicDrawing2, black background, white continous line on top.")
 
 * basicDrawing3: black background, square shape drawn with a stroke made out of tiny red circles. This stroke is achieved by using a polyLine, resampling this line, and then drawing the resampled line using red circles.
 
-![alt text](assets/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
+![basicDrawing3.jpg](assets/basicDrawing3.jpg "basicDrawing3, black background, square drawn using tiny red circles.")
 
 ## Class 2: Wednesday February 19 2020
 
@@ -134,23 +134,23 @@ A line in 2D can be defined in different ways:
 
 * drawingPlayback: black background, a white line on top, and a white dot plays back the stroke motion.
 
-![alt text](assets/drawingPlayback.gif "An animation of drawingPlayback, black background, a white line on top, and a white dot plays back the stroke motion.")
+![drawingPlayback.gif](assets/drawingPlayback.gif "An animation of drawingPlayback.")
 
 * drawing3d: the cursor is drawing on the screen plane, and this plane is rotating while the drawing is happening, resulting in a three dimensional drawing.
 
-![alt text](assets/drawing3d.gif "An animation of drawing3d, the cursor is drawing on the screen plane, and this plane is rotating while the drawing is happening, resulting in a three dimensional drawing.")
+![drawing3d.gif](assets/drawing3d.gif "An animation of drawing3d.")
 
 * drawingBackwards: the drawing is made on the opposite direction of the movement of the mouse cursor, and the drawing follows the mouse around.
 
-![alt text](assets/drawingBackwards.gif "An animation of drawingBackwards, the drawing is made on the opposite direction of the movement of the mouse cursor, and the drawing follows the mouse around.")
+![alt text](assets/drawingBackwards.gif "An animation of drawingBackwards.")
 
-* drawingRendering: 
+* drawingRendering: the drawing is made using the cursor, for every click the screen is cleared, and dragging stores the trajectory of the mouse in a mesh, which is rendered using grayscale for each new vertex and the color changes sinusoidally over time. 
 
-![alt text](assets/drawingRendering.gif "An animation of drawingRendering, ")
+![drawingRendering.gif](assets/drawingRendering.gif "An animation of drawingRendering.")
 
-* generativeExample1: 
+* generativeExample1: the drawing is white lines over gray background, where in every iteration, a random starting point on an existing line is picked, and then a new line is drawn from it, with a random angle and random length, only if this new line does not intersect with existing lines.
 
-![alt text](assets/generativeExample1.gif "An animation of generativeExample1, ")
+![generativeExample1.gif](assets/generativeExample1.gif "An animation of generativeExample1.")
 
 ### Assignment
 
@@ -162,30 +162,40 @@ Build a computational drawing tool -- either one that takes gesture as input or 
 
 We divided in groups and used drawing as a way of understanding computation. The groups tackled these topics:
 
-*  QR code
+* QR code
 * Logic gates
 * Line drawing
 
 ### Code examples
 
-* generativeExample2: 
+* generativeExample2: the drawing is white lines over black background, where in every iteration a new line is drawn starting from a point in an existing line, using a random angle and a fixed distance, only if this new line does not intersect with existing lines.
 
-![alt text](assets/generativeExample2.gif "An animation of generativeExample2, ")
+![generativeExample2.gif](assets/generativeExample2.gif "An animation of generativeExample2")
 
-* generativeExample3: 
+* generativeExample3: the drawing is white lines over black background, where in every iteration a new line is drawn starting from a point in an existing line, choosing a random angle multiple of 45 degrees (0, 45, 90, 135, 180, 225, 270, 315) and a random distance, only if this new line does not intersect with existing lines.
 
-![alt text](assets/generativeExample3.gif "An animation of generativeExample3, ")
+![generativeExample3.gif](assets/generativeExample3.gif "An animation of generativeExample3")
 
-* generativeExample4: 
+* generativeExample4: the drawing is white lines over black background, where in every iteration a new line is drawn starting from a random point in an existing line, choosing a random angle and a random distance. The new line is drawn only until it intersects with an existing line and only if this new line is larger than a threshold.
 
-![alt text](assets/generativeExample2.gif "An animation of generativeExample4, ")
+![generativeExample4.gif](assets/generativeExample4.gif "An animation of generativeExample4")
 
-* generativeExample5: 
+* generativeExample5: the drawing is white lines over black background, where in every iteration a new line is drawn starting from a random point in an existing line, choosing a random angle which is almost perpendicular (+90 or -90 degress plus a bit of noise). The new line is drawn only until it intersects with an existing line and only if this new line is larger than a threshold.
 
-![alt text](assets/generativeExample2.gif "An animation of generativeExample5, ")
+![generativeExample5.gif](assets/generativeExample5.gif "An animation of generativeExample5")
 
 ### Assignment
 
 Make the largest possible drawing and the smallest possible drawing you can.
 
 ## Class 4: Friday February 20 2020
+
+### Code examples
+
+* generativeExample6: the drawing is white lines over black background, where in every iteration a new line is drawn starting from a random point in an existing line, choosing a random angle close to the original angle of the line. The line is drawn with a gradient color, going from fully opaque white in the start point to fully transparent in the end point. The new line is drawn only if it does not intersect with existing lines.
+
+![generativeExample6.gif](assets/generativeExample6.gif "An animation of generativeExample6")
+
+* node: the drawing is a white line over gray background. There is a node on the middle of the canvas, which is connected to a moving node in a fixed distance, and this one is also connected to another one at a fixed distance. This last node is the one that draws a line as a result of leaving a trace of its trajectory while the canvas moves to the left.
+
+![node.gif](assets/node.gif "An animation of node")

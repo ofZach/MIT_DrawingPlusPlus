@@ -21,14 +21,14 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
+        void resetSpeeds(bool resetA, bool resetB);
+    
         float speedA;
         float speedB;
         
         float speedASmooth;
         float speedBSmooth;
         
-    
-    
         ofNode nodeA;
         ofNode nodeB;
         ofNode nodeC;

@@ -30,7 +30,6 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
-        
         // mylines is the name of a vector of type line
         // syntax: vector <type> name;
         vector < line > myLines;
