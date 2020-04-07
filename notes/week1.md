@@ -196,7 +196,7 @@ Make the largest possible drawing and the smallest possible drawing you can.
 
 ![generativeExample6.gif](assets/generativeExample6.gif "An animation of generativeExample6")
 
-* node: 
+* node: generativeExample5: the drawing is white lines over black background, where in every iteration a new line is drawn starting from a random point in an existing line, choosing a random angle close to the original angle of the line. The line is drawn with a gradient color, going from fully opaque white in the start point to fully transparent in the end point. The new line is drawn only if it does not intersect with existing lines.
 
 ![node.gif](assets/node.gif "An animation of node")
 
