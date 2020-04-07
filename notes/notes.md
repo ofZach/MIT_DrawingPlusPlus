@@ -202,6 +202,20 @@ Make the largest possible drawing and the smallest possible drawing you can.
 
 ## Class 05: Tuesday March 31 2020 (remote)
 
+### Code examples
+
+* cvColorTracker: 
+
+![cvColorTracker.gif](assets/cvColorTracker.gif "An animation of cvColorTracker")
+
+* cvColorTracker: 
+
+![cvContourTracker.gif](assets/cvContourTracker.gif "An animation of cvContourTracker")
+
+* cvColorTracker: 
+
+![cvFaceDraw.gif](assets/cvFaceDraw.gif "An animation of cvFaceDraw")
+
 ## Class 06: Tuesday April 07 2020 (remote)
 
 ## Class 07: Tuesday April 14 2020 (remote)
