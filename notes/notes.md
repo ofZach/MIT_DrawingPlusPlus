@@ -223,7 +223,7 @@ The convention for openFrameworks addons is that their names start with the pref
 
 ![cvColorTracker.gif](assets/cvColorTracker.gif "An animation of cvColorTracker")
 
-* cvContourTracker: this example does background substraction. The image is divided in four corners: top left is the camera input with a red dot on the upper point of the biggest contour and a red line with the trail of it, top right is the last recorded background, bottom left is the difference image between camera input and background, bottom right is the contour finder detected by computer vision. The keyboard controls are spacebar to save the background image, and the letter "l" to reset the red line.
+* cvContourTracker: this example features background substraction and contour detection. The image is divided in four corners: top left is the camera input with a red dot on the upper point of the biggest contour and a red line with the trail of it, top right is the last recorded background, bottom left is the difference image between camera input and background, bottom right is the contour finder detected by computer vision. The keyboard controls are spacebar to save the background image, and the letter "l" to reset the red line.
 
 ![cvContourTracker.gif](assets/cvContourTracker.gif "An animation of cvContourTracker")
 
