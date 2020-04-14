@@ -275,11 +275,9 @@ If your cvFaceDraw app is not running because this file cannot be found, we sugg
 
 ![angleLengthLine.gif](assets/angleLengthLine.gif "An animation of angleLengthLine")
 
+* springDrawing:
 
-* springDrawings:
-
-![springDrawings.gif](assets/springDrawings.gif "An animation of springDrawings")
-
+![springDrawing.gif](assets/springDrawing.gif "An animation of springDrawing")
 
 * CLDtoDrawing:
 
