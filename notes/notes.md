@@ -250,7 +250,7 @@ If your cvFaceDraw app is not running because this file cannot be found, we sugg
 
 ![cvContourTracker.gif](assets/cvContourTracker.gif "An animation of cvContourTracker")
 
-* cvFaceDraw: 
+* cvFaceDraw: this example features computer vision and face tracking using ofxFaceTracker2 addon. When there is a face detected, the outlines of both eyes are drawn in white, and each eye leaves a trail of its position, left eye using green and red eye sugin red. Whenever any key is pressed on the keyboard, both trails are reset and we can draw new ones.
 
 ![cvFaceDraw.gif](assets/cvFaceDraw.gif "An animation of cvFaceDraw")
 
