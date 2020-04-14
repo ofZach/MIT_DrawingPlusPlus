@@ -269,13 +269,15 @@ Make a tool that makes a drawing come to life, that animates it in some way.
 
 ## Class 06: Tuesday April 07 2020 (remote)
 
+* mixDrawings: in this example the drawing settings are white lines over gray background. You can draw a new white line with mouse press and dragging, and at any given time, the app only displays the most recent two drawn lines, plus a third line which bounces back and forth between the two that you have drawn, doing a linear interpolation between them, which is achieved by resampling both of the original lines using the same samping size.
+
+![mixDrawings.gif](assets/mixDrawings.gif "An animation of mixDrawings")
+
 * angleLengthLine:
 
 ![angleLengthLine.gif](assets/angleLengthLine.gif "An animation of angleLengthLine")
 
-* mixDrawings:
 
-![mixDrawings.gif](assets/mixDrawings.gif "An animation of mixDrawings")
 
 * springDrawings:
 
