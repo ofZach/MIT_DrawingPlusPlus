@@ -6,6 +6,14 @@
 * Taught at MIT Media Lab, spring semester 2020
 * Teaching assistant: Aarón Montoya-Moraga
 
+The documentation of this class involves .gif files, which are generated from videos to GIF files using ffmpeg and the following command:
+
+```bash
+ffmpeg -i input.mov -filter_complex "[0:v] fps=10,scale=480:-1,split [a][b];[a] palettegen [p]; [b][p] paletteuse" output.gif
+```
+
+This command was adapted from the blog post "How to make GIFs with FFMPEG" at the blog "Giphy Engineering", and available at the link [https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/](https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/).
+
 ## Class 01: Tuesday February 18 2020
 
 ### Assignment for next class:
