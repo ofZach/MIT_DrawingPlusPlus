@@ -217,6 +217,29 @@ In this class we used two openFrameworks addons:
 
 The convention for openFrameworks addons is that their names start with the prefix ofx, so by searching "ofx" on GitHub you will be able to find plenty. Also, there is an index compiled from GitHub and separated by categories at [https://ofxaddons.com/](https://ofxaddons.com/).
 
+To add both of these ofx addons to your openFrameworks installation, we suggest using the terminal to go to the addons/ folder and then cloning the GitHub repositories with the commands:
+
+```bash
+git clone https://github.com/kylemcdonald/ofxCv.git
+git clone https://github.com/HalfdanJ/ofxFaceTracker2.git
+```
+
+ofxFaceTracker2 needs a ~100 MB dependency, which is a file with face landmarks for their detection. The repository has instructions for manually downloading, and also has a .sh script called "download-model.sh" which makes this process automatic.
+
+If you want to use the automatic process, you need to cd into addons/ofxFaceTracker2/ and execute the download-model.sh file on the terminal using the command:
+
+```bash
+sh download-model.sh
+```
+
+This command will download the compressed file, extract the ~100MB file "shape_predictor_68_face_landmarks.dat" and store it in addons/ofxFaceTracker2/model/
+
+The manual option is downloading the file from the link [http://sourceforge.net/projects/dclib/files/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2](http://sourceforge.net/projects/dclib/files/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2), and then uncompressing in order to extract the ~100MB file "shape_predictor_68_face_landmarks.dat", and storing it in the folder addons/ofxFaceTracker2/model/.
+
+This uncompressed file needs to be inside of the folder bin/data/model/ of any app that depends on ofxFaceTracker2. In this class, this will only be needed on the cvFaceDraw example. This can be achieved manually, but we suggest using the openFrameworks projectGenerator app found in your oF installation.
+
+If your cvFaceDraw app is not running because this file cannot be found, we suggest manually moving it one folder up from bin/data/model to bin/data/ and trying again.
+
 ### Code examples
 
 * cvColorTracker: this example looks for a color and then looks up the biggest blob with that color and draws the contour of it.
