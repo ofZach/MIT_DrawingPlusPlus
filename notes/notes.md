@@ -265,6 +265,24 @@ If your cvFaceDraw app is not running because this file cannot be found, we sugg
 
 ## Class 06: Tuesday April 07 2020 (remote)
 
+* angleLengthLine:
+
+![angleLengthLine.gif](assets/angleLengthLine.gif "An animation of angleLengthLine")
+
+
+* mixDrawings:
+
+![mixDrawings.gif](assets/mixDrawings.gif "An animation of mixDrawings")
+
+* springDrawings:
+
+![springDrawings.gif](assets/springDrawings.gif "An animation of springDrawings")
+
+
+* CLDtoDrawing:
+
+![CLDtoDrawing.gif](assets/CLDtoDrawing.gif "An animation of CLDtoDrawing")
+
 ## Class 07: Tuesday April 14 2020 (remote)
 
 ## Class 08: Tuesday April 21 2020 (remote)
