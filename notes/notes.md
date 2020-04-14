@@ -217,6 +217,17 @@ In this class we used two openFrameworks addons:
 
 The convention for openFrameworks addons is that their names start with the prefix ofx, so by searching "ofx" on GitHub you will be able to find plenty. Also, there is an index compiled from GitHub and separated by categories at [https://ofxaddons.com/](https://ofxaddons.com/).
 
+To add both of these ofx addons to your openFrameworks installation, we suggest using the terminal to go to the addons/ folder and then cloning the GitHub repositories with the commands:
+
+```bash
+git clone https://github.com/kylemcdonald/ofxCv.git
+git clone https://github.com/HalfdanJ/ofxFaceTracker2.git
+```
+
+Additionally, ofxFaceTracker2 has a ~100 MB dependency, which is a file with face landmarks for their detection. The repo has instructions for manually downloading, and also has a .sh script called "download-model.sh" which makes this process automatic. We recommend downloading manually from the link [http://sourceforge.net/projects/dclib/files/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2](http://sourceforge.net/projects/dclib/files/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2).
+
+The donwloaded file needs to be uncompressed, and results in the ~100MB file "shape_predictor_68_face_landmarks.dat". This uncompressed file needs to be inside of the folder bin/data/model/ of any app that depends on ofxFaceTracker2. For this class, this file is only needed for cvFaceDraw.
+
 ### Code examples
 
 * cvColorTracker: this example looks for a color and then looks up the biggest blob with that color and draws the contour of it.
