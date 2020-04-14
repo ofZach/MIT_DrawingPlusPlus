@@ -267,11 +267,11 @@ If your cvFaceDraw app is not running because this file cannot be found, we sugg
 
 ### Code examples
 
-* mixDrawings: in this example the drawing settings are white lines over gray background. You can draw a new white line with mouse press and dragging, and at any given time, the app only displays the most recent two drawn lines, plus a third line which bounces back and forth between the two that you have drawn, doing a linear interpolation between them, which is achieved by resampling both of the original lines using the same samping size.
+* mixDrawings: This example features linear interpolation between lines. The drawing settings are white lines over gray background. You can draw a new white line with mouse press and dragging, and at any given time, the app only displays the most recent two drawn lines, plus a third line which bounces back and forth between the two that you have drawn, doing a linear interpolation between them, which is achieved by resampling both of the original lines using the same samping size.
 
 ![mixDrawings.gif](assets/mixDrawings.gif "An animation of mixDrawings")
 
-* angleLengthLine:
+* angleLengthLine: this example features lines curling and uncurling. The drawing settings are white lines over black background. You can draw a new white line with every mouse press and dragging. At any give ntime, the app displays all the lines drawn so far, which go from their original state, through being a straight line, and becoming their opposite in terms of curvature. This is achieved by thinking of every line as a succession of straight lines, and manipulating the relative angles between them, oscillating between their original value and the complementary one, becoming a straight line in between.
 
 ![angleLengthLine.gif](assets/angleLengthLine.gif "An animation of angleLengthLine")
 
