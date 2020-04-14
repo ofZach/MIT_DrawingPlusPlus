@@ -275,11 +275,9 @@ If your cvFaceDraw app is not running because this file cannot be found, we sugg
 
 ![angleLengthLine.gif](assets/angleLengthLine.gif "An animation of angleLengthLine")
 
+* springDrawing:
 
-* springDrawings:
-
-![springDrawings.gif](assets/springDrawings.gif "An animation of springDrawings")
-
+![springDrawing.gif](assets/springDrawing.gif "An animation of springDrawing")
 
 * CLDtoDrawing:
 
@@ -288,6 +286,12 @@ If your cvFaceDraw app is not running because this file cannot be found, we sugg
 ### Assignment
 
 Make a tool that makes a drawing come to life, that animates it in some way.
+
+### Related software
+
+* [clmtrackr.js](https://github.com/auduno/clmtrackr): an open source JavaScript library for facial features tracking on the browser.
+* [ml5.js](https://ml5js.org/): an open source library for artificial intelligence web applications, built on top of tensorflow.js, developed at NYU ITP.
+
 
 ## Class 07: Tuesday April 14 2020 (remote)
 
