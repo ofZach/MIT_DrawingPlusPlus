@@ -224,9 +224,21 @@ git clone https://github.com/kylemcdonald/ofxCv.git
 git clone https://github.com/HalfdanJ/ofxFaceTracker2.git
 ```
 
-Additionally, ofxFaceTracker2 has a ~100 MB dependency, which is a file with face landmarks for their detection. The repo has instructions for manually downloading, and also has a .sh script called "download-model.sh" which makes this process automatic. We recommend downloading manually from the link [http://sourceforge.net/projects/dclib/files/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2](http://sourceforge.net/projects/dclib/files/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2).
+ofxFaceTracker2 needs a ~100 MB dependency, which is a file with face landmarks for their detection. The repository has instructions for manually downloading, and also has a .sh script called "download-model.sh" which makes this process automatic.
 
-The donwloaded file needs to be uncompressed, and results in the ~100MB file "shape_predictor_68_face_landmarks.dat". This uncompressed file needs to be inside of the folder bin/data/model/ of any app that depends on ofxFaceTracker2. For this class, this file is only needed for cvFaceDraw.
+If you want to use the automatic process, you need to cd into addons/ofxFaceTracker2/ and execute the download-model.sh file on the terminal using the command:
+
+```bash
+sh download-model.sh
+```
+
+This command will download the compressed file, extract the ~100MB file "shape_predictor_68_face_landmarks.dat" and store it in addons/ofxFaceTracker2/model/
+
+The manual option is downloading the file from the link [http://sourceforge.net/projects/dclib/files/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2](http://sourceforge.net/projects/dclib/files/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2), and then uncompressing in order to extract the ~100MB file "shape_predictor_68_face_landmarks.dat", and storing it in the folder addons/ofxFaceTracker2/model/.
+
+This uncompressed file needs to be inside of the folder bin/data/model/ of any app that depends on ofxFaceTracker2. In this class, this will only be needed on the cvFaceDraw example. This can be achieved manually, but we suggest using the openFrameworks projectGenerator app found in your oF installation.
+
+If your cvFaceDraw app is not running because this file cannot be found, we suggest manually moving it one folder up from bin/data/model to bin/data/ and trying again.
 
 ### Code examples
 
