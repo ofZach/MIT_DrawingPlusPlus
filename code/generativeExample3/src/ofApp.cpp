@@ -67,7 +67,6 @@ void ofApp::update(){
             // pick one of the possible random angles
             float randomAngle = (int) ofRandom(0, angleDivisions) * angleDivisionSize;
             
-            
             // create a new line called templine
             line tempLine;
             
@@ -101,7 +100,6 @@ void ofApp::update(){
                     // end the iteration
                     break;
                 }
-                
             }
             
             // if the addTempline boolean is true
