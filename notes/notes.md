@@ -263,11 +263,9 @@ If your cvFaceDraw app is not running because this file cannot be found, we sugg
   * [Doodle Tunes](https://andreasrefsgaard.dk/project/doodle-tunes/)
   * [An algorithm watching a movie trailer](https://andreasrefsgaard.dk/project/an-algorithm-watching-a-movie-trailer)
 
-### Assignment
-
-Make a tool that makes a drawing come to life, that animates it in some way.
-
 ## Class 06: Tuesday April 07 2020 (remote)
+
+### Code examples
 
 * mixDrawings: in this example the drawing settings are white lines over gray background. You can draw a new white line with mouse press and dragging, and at any given time, the app only displays the most recent two drawn lines, plus a third line which bounces back and forth between the two that you have drawn, doing a linear interpolation between them, which is achieved by resampling both of the original lines using the same samping size.
 
@@ -278,7 +276,6 @@ Make a tool that makes a drawing come to life, that animates it in some way.
 ![angleLengthLine.gif](assets/angleLengthLine.gif "An animation of angleLengthLine")
 
 
-
 * springDrawings:
 
 ![springDrawings.gif](assets/springDrawings.gif "An animation of springDrawings")
@@ -287,6 +284,10 @@ Make a tool that makes a drawing come to life, that animates it in some way.
 * CLDtoDrawing:
 
 ![CLDtoDrawing.gif](assets/CLDtoDrawing.gif "An animation of CLDtoDrawing")
+
+### Assignment
+
+Make a tool that makes a drawing come to life, that animates it in some way.
 
 ## Class 07: Tuesday April 14 2020 (remote)
 
