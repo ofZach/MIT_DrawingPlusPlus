@@ -20,11 +20,22 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+    
+    // lineA, lineB, and mix are instances of ofPolyine
+    // lineA and lineB store the two most recent lines drawn
+    // mix stores the interpolation between lineA and lineB
     ofPolyline lineA;
     ofPolyline lineB;
     ofPolyline mix;
+    
+    // mixPct is a float that stores the interpolation percentage
     float mixPct;
+    
+    // sampleCount is an integer that stores the sampling count
+    int sampleCount;
+    
+    // bDrawingA is a boolean for toggling for every new drawing
+    // this allows the app to always store the latest two drawings
     bool bDrawingA;
     
 };

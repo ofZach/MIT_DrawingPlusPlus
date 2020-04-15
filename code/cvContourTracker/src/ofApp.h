@@ -22,13 +22,19 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+    // ofVideograbber for the camera input
     ofVideoGrabber cam;
+    
+    // ofImage for storing the background image
     ofImage background;
+    
+    // ofImage for storing the difference between background and image
     ofImage diff;
+    
+    // ContourFinder from the ofxCv addon
     ofxCv::ContourFinder finder;
     
+    // ofPolyline for drawing
     ofPolyline myLine;
-    
-        
 		
 };

@@ -6,6 +6,14 @@
 * Taught at MIT Media Lab, spring semester 2020
 * Teaching assistant: Aarón Montoya-Moraga
 
+The documentation of this class involves .gif files, which are generated from videos to GIF files using ffmpeg and the following command:
+
+```bash
+ffmpeg -i input.mov -filter_complex "[0:v] fps=10,scale=480:-1,split [a][b];[a] palettegen [p]; [b][p] paletteuse" output.gif
+```
+
+This command was adapted from the blog post "How to make GIFs with FFMPEG" at the blog "Giphy Engineering", and available at the link [https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/](https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/).
+
 ## Class 01: Tuesday February 18 2020
 
 ### Assignment for next class:
@@ -209,17 +217,40 @@ In this class we used two openFrameworks addons:
 
 The convention for openFrameworks addons is that their names start with the prefix ofx, so by searching "ofx" on GitHub you will be able to find plenty. Also, there is an index compiled from GitHub and separated by categories at [https://ofxaddons.com/](https://ofxaddons.com/).
 
+To add both of these ofx addons to your openFrameworks installation, we suggest using the terminal to go to the addons/ folder and then cloning the GitHub repositories with the commands:
+
+```bash
+git clone https://github.com/kylemcdonald/ofxCv.git
+git clone https://github.com/HalfdanJ/ofxFaceTracker2.git
+```
+
+ofxFaceTracker2 needs a ~100 MB dependency, which is a file with face landmarks for their detection. The repository has instructions for manually downloading, and also has a .sh script called "download-model.sh" which makes this process automatic.
+
+If you want to use the automatic process, you need to cd into addons/ofxFaceTracker2/ and execute the download-model.sh file on the terminal using the command:
+
+```bash
+sh download-model.sh
+```
+
+This command will download the compressed file, extract the ~100MB file "shape_predictor_68_face_landmarks.dat" and store it in addons/ofxFaceTracker2/model/
+
+The manual option is downloading the file from the link [http://sourceforge.net/projects/dclib/files/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2](http://sourceforge.net/projects/dclib/files/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2), and then uncompressing in order to extract the ~100MB file "shape_predictor_68_face_landmarks.dat", and storing it in the folder addons/ofxFaceTracker2/model/.
+
+This uncompressed file needs to be inside of the folder bin/data/model/ of any app that depends on ofxFaceTracker2. In this class, this will only be needed on the cvFaceDraw example. This can be achieved manually, but we suggest using the openFrameworks projectGenerator app found in your oF installation.
+
+If your cvFaceDraw app is not running because this file cannot be found, we suggest manually moving it one folder up from bin/data/model to bin/data/ and trying again.
+
 ### Code examples
 
 * cvColorTracker: this example looks for a color and then looks up the biggest blob with that color and draws the contour of it.
 
 ![cvColorTracker.gif](assets/cvColorTracker.gif "An animation of cvColorTracker")
 
-* cvContourTracker: 
+* cvContourTracker: this example features background substraction and contour detection. The image is divided in four corners: top left is the camera input with a red dot on the upper point of the biggest contour and a red line with the trail of it, top right is the last recorded background, bottom left is the difference image between camera input and background, bottom right is the contour finder detected by computer vision. The keyboard controls are spacebar to save the background image, and the letter "l" to reset the red line.
 
 ![cvContourTracker.gif](assets/cvContourTracker.gif "An animation of cvContourTracker")
 
-* cvFaceDraw: 
+* cvFaceDraw: this example features computer vision and face tracking using ofxFaceTracker2 addon. When there is a face detected, the outlines of both eyes are drawn in white, and each eye leaves a trail of its position, left eye using green and red eye sugin red. Whenever any key is pressed on the keyboard, both trails are reset and we can draw new ones.
 
 ![cvFaceDraw.gif](assets/cvFaceDraw.gif "An animation of cvFaceDraw")
 
@@ -230,11 +261,37 @@ The convention for openFrameworks addons is that their names start with the pref
   * [Paint me in pixels so I can dance forever](https://mayaontheinter.net/paintme/)
 * [Andreas Refsgaard](https://andreasrefsgaard.dk/) creates work with computer vision, machine learning and interactivity
   * [Doodle Tunes](https://andreasrefsgaard.dk/project/doodle-tunes/)
-  * [An algorithm watching a movie trailer](https://andreasrefsgaard.dk/project/an-algorithm-watching-a-movie-trailer/)
-
-
+  * [An algorithm watching a movie trailer](https://andreasrefsgaard.dk/project/an-algorithm-watching-a-movie-trailer)
 
 ## Class 06: Tuesday April 07 2020 (remote)
+
+### Code examples
+
+* mixDrawings: This example features linear interpolation between lines. The drawing settings are white lines over gray background. You can draw a new white line with mouse press and dragging, and at any given time, the app only displays the most recent two drawn lines, plus a third line which bounces back and forth between the two that you have drawn, doing a linear interpolation between them, which is achieved by resampling both of the original lines using the same samping size.
+
+![mixDrawings.gif](assets/mixDrawings.gif "An animation of mixDrawings")
+
+* angleLengthLine: this example features lines curling and uncurling. The drawing settings are white lines over black background. You can draw a new white line with every mouse press and dragging. At any give ntime, the app displays all the lines drawn so far, which go from their original state, through being a straight line, and becoming their opposite in terms of curvature. This is achieved by thinking of every line as a succession of straight lines, and manipulating the relative angles between them, oscillating between their original value and the complementary one, becoming a straight line in between.
+
+![angleLengthLine.gif](assets/angleLengthLine.gif "An animation of angleLengthLine")
+
+* springDrawing:
+
+![springDrawing.gif](assets/springDrawing.gif "An animation of springDrawing")
+
+* CLDtoDrawing:
+
+![CLDtoDrawing.gif](assets/CLDtoDrawing.gif "An animation of CLDtoDrawing")
+
+### Assignment
+
+Make a tool that makes a drawing come to life, that animates it in some way.
+
+### Related software
+
+* [clmtrackr.js](https://github.com/auduno/clmtrackr): an open source JavaScript library for facial features tracking on the browser.
+* [ml5.js](https://ml5js.org/): an open source library for artificial intelligence web applications, built on top of tensorflow.js, developed at NYU ITP.
+
 
 ## Class 07: Tuesday April 14 2020 (remote)
 

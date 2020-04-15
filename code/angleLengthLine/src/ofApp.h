@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+//add .h file with class angleLengthLine
 #include "angleLengthLine.h"
 
 class ofApp : public ofBaseApp{
@@ -22,8 +23,10 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
-        ofPolyline line;
-        vector < angleLengthLine > alines;
+    // declare ofPolyline line
+    ofPolyline line;
     
-        
+    // declare vector alines of type angleLengthLine
+    vector < angleLengthLine > alines;
+    
 };
